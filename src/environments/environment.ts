@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+   firebaseConfig: {
+    apiKey: 'AIzaSyBmKCoKLwumQVHuvJyjLDRgjvTAD38SqG0',
+    authDomain: 'the-alchemist-blog.firebaseapp.com',
+    databaseURL: 'https://the-alchemist-blog.firebaseio.com',
+    projectId: 'the-alchemist-blog',
+    storageBucket: 'the-alchemist-blog.appspot.com',
+    messagingSenderId: '960788727153',
+    appId: '1:960788727153:web:fca5a8373c2a62cb0222d0',
+    measurementId: 'G-ZJCP1H7SG8'
+  }
 };
 
 /*
