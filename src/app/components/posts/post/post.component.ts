@@ -18,10 +18,10 @@ export class PostComponent implements OnInit {
     contentPost: 'Hello World',
     imagePost: 'https://i.picsum.photos/id/180/200/300.jpg'
   }
-  constructor(private _Router: ActivatedRoute) { }
+  constructor(private Router: ActivatedRoute) { }
 
   ngOnInit() {
-    this.post = this._Router.snapshot.params.id;
+    this.post.id = this.Router.snapshot.params.id;
   }
 
 }

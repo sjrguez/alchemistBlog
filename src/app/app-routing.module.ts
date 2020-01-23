@@ -16,7 +16,8 @@ const routes: Routes = [
   {
     path: 'post/:id',
     component: PostComponent
-  }
+  },
+  { path: 'about', loadChildren: () => import('./components/pages/about/about.module').then(m => m.AboutModule) }
 ]
   ;
 
