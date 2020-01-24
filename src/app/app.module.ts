@@ -13,7 +13,7 @@ import { ToolbarComponent } from './shared/components/toolbar/toolbar.component'
 
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireStorageModule, StorageBucket, AngularFireStorage} from '@angular/fire/storage';
-import {AngularFireModule} from '@angular/fire'
+import {AngularFireModule} from '@angular/fire';
 import { environment } from '../environments/environment';
 
 @NgModule({
