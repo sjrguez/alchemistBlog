@@ -3,13 +3,23 @@
     
     <span class="fill-remaining-space"> </span>
     
-    <a routerLink="/login" routerLinkActive="active" >
-        <button mat-button>Login</button>    
-    </a>
-    <a routerLink="/admin" routerLinkActive="active" >
+
+    <a  *ngIf="authSrv.userData | async" routerLink="/admin" routerLinkActive="active" >
         <button mat-button>Admin</button>    
     </a>
     <a routerLink="/about" routerLinkActive="active" >
         <button mat-button>About</button>    
     </a>
+
+    <ng-template #showlogin>
+        <a   routerLink="/login" routerLinkActive="active">
+            <button mat-button>Login</button>    
+        </a>
+    </ng-template>
+
+    <a *ngIf="authSrv.userData | async; else showlogin"  (click)="logOut()">
+        <button mat-button>Logout</button>    
+    </a>
+
+
 </mat-toolbar>

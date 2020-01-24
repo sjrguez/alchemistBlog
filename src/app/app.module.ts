@@ -9,12 +9,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
 
-
-
 import {AngularFirestoreModule} from '@angular/fire/firestore';
-import {AngularFireStorageModule, StorageBucket, AngularFireStorage} from '@angular/fire/storage';
+import {AngularFireStorageModule, StorageBucket} from '@angular/fire/storage';
 import {AngularFireModule} from '@angular/fire';
 import { environment } from '../environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { environment } from '../environments/environment';
     AngularFireStorageModule,
     AppRoutingModule,
     MaterialModule,
+    AngularFireAuthModule,
+    ReactiveFormsModule
   ],
   providers: [
     {
